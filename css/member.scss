@@ -1,0 +1,397 @@
+$PINK: #ff46be;
+$YELLOW: #ffe000;
+$GREEN: #bcff02;
+$BLUE: #00ffff;
+
+$sm: 576px;
+$md: 768px;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: black;
+  color: white;
+  width: 100vw;
+}
+.hum-menu {
+  background-color: white;
+}
+
+.flex-item {
+  a {
+    color: black;
+  }
+}
+.hum-icon-container {
+  background-color: white;
+}
+.hum-icon {
+  span {
+    background-color: black;
+  }
+}
+.top {
+  display: block;
+  position: relative;
+  // height: 100vh;
+  width: 100vw;
+}
+.background-member {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 60vw;
+  max-height: 70vh;
+}
+
+.title {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  right: 10vw;
+  letter-spacing: 20vh;
+
+  color: white;
+  font-size: 14vw;
+  letter-spacing: 0.05em;
+}
+
+@media screen and (orientation: portrait) {
+  .title {
+    font-size: 17vw;
+    top: 30%;
+    transform: translateY(0);
+  }
+  .background-member {
+    top: 45%;
+  }
+}
+
+.scroll {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-origin: right;
+  transform: translateX(-50%) rotate(90deg);
+
+  color: white;
+  border-bottom: 1px solid white;
+  letter-spacing: 0.1em;
+}
+
+.member-main {
+  margin: 0 2vw;
+  overflow: hidden;
+}
+
+// 現役・OB・募集button
+input[type="radio"] {
+  display: none;
+}
+
+.label-wrap {
+  position: relative;
+  margin-bottom: 5vh;
+}
+.label-btn {
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  border: 1px solid $GREEN;
+  background-color: black;
+  color: $GREEN;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+#geneki-container,
+#obog-container,
+#want-container {
+  display: none;
+}
+
+#geneki-btn:checked ~ .label-wrap .geneki-label {
+  background-color: $GREEN;
+  color: black;
+}
+#geneki-btn:checked ~ #geneki-container {
+  display: block;
+}
+#obog-btn:checked ~ .label-wrap .obog-label {
+  background-color: $GREEN;
+  color: black;
+}
+#obog-btn:checked ~ #obog-container {
+  display: block;
+}
+#want-btn:checked ~ .label-wrap .want-label {
+  background-color: $GREEN;
+  color: black;
+}
+#want-btn:checked ~ #want-container {
+  display: block;
+}
+
+@media screen and (orientation: portrait) {
+  .label-wrap {
+    display: block;
+    height: 40px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+
+    .label-btn {
+      position: absolute;
+      display: inline-block;
+      padding: 0.8em 1px;
+      margin: 0 0;
+      width: 32%;
+    }
+    .geneki-label {
+      top: 0;
+      left: 0;
+    }
+    .obog-label {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .want-label {
+      top: 0;
+      right: 0;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    label {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (orientation: portrait) {
+  main {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .profile {
+    display: inline-block;
+    width: 96vw;
+    margin: 0 0 10px;
+  }
+
+  .profile-left {
+    position: relative;
+    float: left;
+    padding: 0;
+    text-align: left;
+    .img-mask {
+      display: none;
+    }
+    a {
+      position: absolute;
+      display: inline-block;
+      background-color: transparent;
+      z-index: 5;
+      @media screen and (max-width: $sm) {
+        margin-top: 25px;
+        width: 130px;
+        height: 130px;
+      }
+      @media screen and (min-width: 577px) {
+        width: 180px;
+        height: 180px;
+      }
+    }
+    img {
+      background-color: white;
+      @media screen and (max-width: $sm) {
+        margin-top: 25px;
+        width: 130px;
+      }
+      @media screen and (min-width: 577px) {
+        width: 180px;
+      }
+
+      border: solid 4px $GREEN;
+    }
+  }
+
+  .profile-right {
+    float: right;
+    width: 100%;
+    overflow-y: hidden;
+    @media screen and (max-width: $sm) {
+      margin-left: -130px;
+      padding-left: 135px;
+      padding-right: 0px;
+      height: 155px;
+    }
+    @media screen and (min-width: $sm) {
+      margin-left: -180px;
+      padding-left: 190px;
+      padding-right: 0px;
+      height: 170px;
+    }
+  }
+
+  .name {
+    float: left;
+    padding-bottom: 5px;
+    line-height: 100%;
+    color: white;
+
+    @media screen and (max-width: $sm) {
+      font-size: 20px;
+    }
+    @media screen and (min-width: $sm) {
+      font-size: 25px;
+    }
+  }
+
+  .description {
+    clear: both;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 100%;
+    color: white;
+    border-top: solid 1px $GREEN;
+    border-left: solid 1px $GREEN;
+    font-size: 12px;
+
+    @media screen and (min-width: 350px) {
+      font-size: 13px;
+      // line-height: 130%;
+    }
+    @media screen and (min-width: 371px) and (max-width: 577px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 756px) {
+      font-size: 17px;
+      padding-top: 5px;
+    }
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .member-main {
+    position: relative;
+    padding: 0;
+  }
+
+  .center-line {
+    display: block;
+    position: absolute;
+    left: 50%;
+
+    width: 2px;
+
+    background-color: #606060;
+  }
+  .member-container {
+    display: flex;
+    margin-bottom: 3em;
+  }
+  .member-img {
+    position: relative;
+    width: 25vw;
+    text-align: left;
+    overflow: hidden;
+
+    .img-container {
+      display: inline-block;
+      position: relative;
+
+      width: 100%;
+    }
+    img {
+      width: 80%;
+    }
+    .img-mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 80%;
+      height: 100%;
+      opacity: 0;
+      background-color: #00000088;
+      -webkit-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+    }
+    a {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      color: white;
+      opacity: 0;
+    }
+    &:hover {
+      .img-mask {
+        opacity: 1;
+      }
+      a {
+        opacity: 1;
+      }
+    }
+  }
+  .member-description-container {
+    display: block;
+    width: 75vw;
+  }
+  .member-name {
+    font-size: 1em;
+    line-height: 100%;
+  }
+  .member-description {
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 0.8em;
+  }
+}
+
+.recruitment {
+  display: inline-block;
+  padding: 15px;
+  margin: 0 5% 5%;
+  width: 90%;
+  border: 2px solid $GREEN;
+
+  .rec-title {
+    border-bottom: 1px solid gray;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .recruitment {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .rec-title,
+  .mid-p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .recruitment {
+    font-size: 20px;
+  }
+  .rec-title,
+  .mid-p {
+    font-size: 30px;
+  }
+}

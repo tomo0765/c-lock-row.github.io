@@ -1,0 +1,497 @@
+$PINK: #ff46be;
+$YELLOW: #ffe000;
+$GREEN: #bcff02;
+$BLUE: #00ffff;
+
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 16px;
+  font-family:"Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "ＭＳ 明朝", serif;
+}
+
+// ローディング画面
+// .loader-container {
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+
+//   height: 100vh;
+//   width: 100vw;
+//   background-color: black;
+//   z-index: 10;
+// }
+// .loaded {
+//   opacity: 0;
+//   visibility: hidden;
+// }
+// .loader,
+// .loader:before,
+// .loader:after {
+//   background: #ffffff;
+//   -webkit-animation: load1 1s infinite ease-in-out;
+//   animation: load1 1s infinite ease-in-out;
+//   width: 1em;
+//   height: 4em;
+// }
+// .loader {
+//   color: #ffffff;
+//   text-indent: -9999em;
+//   margin: 88px auto;
+//   position: absolute;
+//   top: 30%;
+//   left: 50%;
+//   font-size: 11px;
+//   -webkit-animation-delay: -0.16s;
+//   animation-delay: -0.16s;
+// }
+// .loader:before,
+// .loader:after {
+//   position: absolute;
+//   top: 0;
+//   content: '';
+// }
+// .loader:before {
+//   left: -1.5em;
+//   -webkit-animation-delay: -0.32s;
+//   animation-delay: -0.32s;
+// }
+// .loader:after {
+//   left: 1.5em;
+// }
+// @-webkit-keyframes load1 {
+//   0%,
+//   80%,
+//   100% {
+//     box-shadow: 0 0;
+//     height: 4em;
+//   }
+//   40% {
+//     box-shadow: 0 -2em;
+//     height: 5em;
+//   }
+// }
+// @keyframes load1 {
+//   0%,
+//   80%,
+//   100% {
+//     box-shadow: 0 0;
+//     height: 4em;
+//   }
+//   40% {
+//     box-shadow: 0 -2em;
+//     height: 5em;
+//   }
+// }
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: calc((4 / 3) * 1vw + 8px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+.nav-sp {
+  display: none;
+}
+
+@media screen and (orientation: portrait) {
+  .nav-pc {
+    display: none;
+  }
+
+  .nav-sp {
+    display: block;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+  }
+
+  .header-pink,
+  .header-yellow,
+  .header-green,
+  .header-blue {
+    display: block;
+    height: 1vh;
+  }
+
+  .header-white {
+    background-color: white;
+  }
+  .header-pink {
+    background-color: $PINK;
+  }
+  .header-yellow {
+    background-color: $YELLOW;
+  }
+  .header-green {
+    background-color: $GREEN;
+  }
+  .header-blue {
+    background-color: $BLUE;
+  }
+
+  .header-sp-bottom-container {
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    // border-top: 1px solid white;
+  }
+  .header-sp-bottom {
+    padding: 0;
+    margin: 6px auto 6px;
+    height: 100%;
+    max-width: 25%;
+    // overflow: hidden;
+    // border:1px solid yellow;
+    a {
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      display: inline-block;
+      // width: 6vh;
+      max-width: 100%;
+      height: 100%;
+      text-align: center;
+      text-decoration: none;
+      // border: 1px solid blue;
+    }
+    svg {
+      max-height: 80%;
+      max-width: 20vw;
+      z-index: 10;
+      // max-width: 50%;
+      // border: 1px solid yellow;
+      &:active {
+        transform-origin: center;
+        transform: scale(0.8, 0.8);
+      }
+    }
+  }
+
+  .header-sp-top {
+    p {
+      color: white;
+    }
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .hum-menu {
+    display: inline-block;
+    position: fixed;
+    z-index: 3;
+    top: 4vh;
+    right: 0;
+
+    height: 16px;
+    transform: translateX(100%);
+  }
+
+  .flex-container {
+    display: flex;
+  }
+
+  .flex-item {
+    a {
+      display: inline-block;
+     
+      margin: 2vh 2vw;
+      padding: 0;
+      text-decoration: none;
+      line-height: 100%;
+      font-size: 16px;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .hum-icon-container {
+    display: block;
+    position: fixed;
+    top: 4vh;
+    right: 0;
+    z-index: 5;
+  }
+  .hum-icon {
+    display: inline-block;
+    position: relative;
+
+    margin: 2vh;
+
+    cursor: pointer;
+
+    &:hover {
+      .hum-top,
+      .hum-bottom {
+        width: 100%;
+      }
+    }
+
+    span {
+      display: block;
+      position: absolute;
+
+      height: 5%;
+    }
+  }
+
+  .hum-top,
+  .hum-bottom {
+    transition: all 0.4s 0s ease-out;
+  }
+
+  .hum-top {
+    top: 20%;
+    right: 0;
+
+    width: 60%;
+  }
+
+  .hum-middle {
+    top: 47.5%;
+
+    width: 100%;
+  }
+
+  .hum-bottom {
+    top: 75%;
+    left: 0;
+
+    width: 60%;
+  }
+
+  @media screen and (min-width: 600px) {
+    .flex-item{
+      a {
+        font-size: calc((10 / 3) * 1vw - 4px);
+      }
+    }
+
+    .hum-icon {
+      height: calc((10 / 3) * 1vw - 4px);
+      width: calc((10 / 3) * 1vw - 4px);
+    }
+
+    .hum-menu {
+      height: calc((10 / 3) * 1vw - 4px + 4vh);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .flex-item{
+      a {
+        font-size: 36px;
+      }
+    }
+
+    .hum-icon {
+      height: 36px;
+      width: 36px;
+    }
+
+    .hum-menu {
+      height: calc(36px + 4vh);
+    }
+  }
+
+  .hum-open {
+    .hum-top {
+      animation-name: hum-top-open;
+      animation-duration: 0.75s;
+      animation-fill-mode: forwards;
+      transform-origin: center;
+    }
+    .hum-middle {
+      animation-name: hum-middle-open;
+      animation-duration: 0.225s;
+      animation-fill-mode: forwards;
+    }
+    .hum-bottom {
+      animation-name: hum-bottom-open;
+      animation-duration: 0.75s;
+      animation-fill-mode: forwards;
+      transform-origin: center;
+    }
+
+    .hum-menu {
+      animation-name: hum-menu-open;
+      animation-duration: 0.75s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+    }
+  }
+
+  @keyframes hum-top-open {
+    from {
+      width: 100%;
+    }
+    30% {
+      top: 47.5%;
+      width: 100%;
+      transform: rotate(0);
+    }
+    100% {
+      top: 47.5%;
+      width: 100%;
+      transform: rotate(-45deg);
+    }
+  }
+
+  @keyframes hum-middle-open {
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes hum-bottom-open {
+    from {
+      width: 100%;
+    }
+    30% {
+      top: 47.5%;
+      width: 100%;
+      transform: rotate(0);
+    }
+    100% {
+      top: 47.5%;
+      width: 100%;
+      transform: rotate(45deg);
+    }
+  }
+
+  @keyframes hum-menu-open {
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
+
+.square-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.square {
+  display: block;
+  position: absolute;
+
+  background-color: transparent;
+  mix-blend-mode: exclusion;
+}
+
+.square-large {
+  height: 30vh;
+  width: 30vh;
+}
+
+.square-medium {
+  height: 20vh;
+  width: 20vh;
+}
+
+.square-small {
+  height: 10vh;
+  width: 10vh;
+}
+
+.sl-move {
+  animation-name: sl-display;
+  animation-duration: 0.8s;
+}
+
+.sm-move {
+  animation-name: sm-display;
+  animation-duration: 0.8s;
+  animation-delay: 0.2s;
+}
+
+.ss-move {
+  animation-name: ss-display;
+  animation-duration: 0.8s;
+  animation-delay: 0.4s;
+}
+
+@keyframes sl-display {
+  from {
+    transform: scale(0) rotate(-10deg);
+  }
+  40% {
+    border: 5vh solid white;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(-10deg);
+    border: 0 solid white;
+    opacity: 0;
+  }
+}
+
+@keyframes sm-display {
+  from {
+    transform: scale(0) rotate(20deg);
+  }
+  40% {
+    border: 3vh solid white;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(20deg);
+    border: 0 solid white;
+    opacity: 0;
+  }
+}
+
+@keyframes ss-display {
+  from {
+    transform: scale(0) rotate(45deg);
+  }
+  40% {
+    border: 2vh solid white;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(45deg);
+    border: 0 solid white;
+    opacity: 0;
+  }
+}
+
+.hide-nav-sp {
+  display: none;
+}
+
+footer {
+  text-align: center;
+}
+@media screen and (orientation:portrait) {
+  footer {
+    margin-bottom: 65px;
+  }
+  
+}
