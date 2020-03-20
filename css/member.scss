@@ -63,11 +63,12 @@ body {
 @media screen and (orientation: portrait) {
   .title {
     font-size: 17vw;
-    top: 30%;
-    transform: translateY(0);
+    top: 45%;
+    transform: translateY(-50%);
   }
   .background-member {
-    top: 45%;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 

@@ -89,7 +89,7 @@ main {
   display: flex;
   margin-top: 20vh; //今は適当
 
-  width: 100vw;
+  width: 100%;
 }
 
 .visual-img-portrait {
@@ -142,9 +142,7 @@ main {
   .description-right-container {
     display: block;
     width: 100%;
-  }
-  .description-right-container {
-    padding: 5vh 5vw 0 2vw;
+    padding: 5vh 5vw 0;
   }
 }
 

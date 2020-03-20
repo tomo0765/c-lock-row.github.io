@@ -170,38 +170,310 @@
         </nav>
     </header>
 
-
-
     <div class="title">C-lock-row全体戦</div>
 
     <main>
-        <!-- <div class="back-yellow"></div>
-        <div class="back-orange"></div> -->
-
-
-            <div class="visual-container">
-                <div class="visual-img-portrait">
-                    <img src="../img/works/zentaisen.png" alt="C-lock-row全体戦">
-                </div>
-                <div class="description-right-container">
-                    <div class="details" style="margin-top: 0;">
-                        <h3>形式</h3>
-                        <p>Web</p>
-                        <br>
-                        <h3>開催日</h3>
-                        <p>2020/3/25</p>
-                    </div>
+        <div class="visual-container">
+            <div class="visual-img-portrait">
+                <img src="../img/works/zentaisen.png" alt="C-lock-row全体戦">
+            </div>
+            <div class="description-right-container">
+                <div class="details" style="margin-top: 0;">
+                    <h3>形式</h3>
+                    <p>Web</p>
+                    <br>
+                    <h3>開催日</h3>
+                    <p>2020/3/25</p>
                 </div>
             </div>
-     
+        </div>
+
+
+        <div class="kaisetsu-wrap">
+            <br>
+            <h3 style="border-bottom:1px solid black">解説</h3>
+            <div class="kaisetsu-container">
+                
+                <input type="radio" id="btn1" name="radio-btn" checked>
+                <input type="radio" id="btn2" name="radio-btn">
+                <input type="radio" id="btn3" name="radio-btn">
+                <input type="radio" id="btn4" name="radio-btn">
+                <input type="radio" id="btn5" name="radio-btn">
+                <input type="radio" id="btn6" name="radio-btn">
+                <input type="radio" id="btn7" name="radio-btn">
+                <input type="radio" id="btn8" name="radio-btn">
+                <input type="radio" id="btn9" name="radio-btn">
+                <input type="radio" id="btn10" name="radio-btn">
+                <input type="radio" id="btn11" name="radio-btn">
+                <input type="radio" id="btn12" name="radio-btn">
+                <input type="radio" id="btn13" name="radio-btn">
+                <input type="radio" id="btn14" name="radio-btn">
+                <input type="radio" id="btn15" name="radio-btn">
+                <input type="radio" id="btn16" name="radio-btn">
+                <input type="radio" id="btn17" name="radio-btn">
+                <input type="radio" id="btn18" name="radio-btn">
+
+            
+                <div class="label-wrap">
+                    <label for="btn1" class="label-btn label1">1問目</label><!--
+                    --><label for="btn2" class="label-btn back-gray label2 label-center">2問目</label><!--
+                    --><label for="btn3" class="label-btn label3">3問目</label><!--
+                    --><label for="btn4" class="label-btn back-gray label4">4問目</label><!--
+                    --><label for="btn5" class="label-btn label5 label-center">5問目</label><!--
+                    --><label for="btn6" class="label-btn back-gray label6">6問目</label><!--
+                    --><label for="btn7" class="label-btn label7">7問目</label><!--
+                    --><label for="btn8" class="label-btn back-gray label8 label-center">8問目</label><!--
+                    --><label for="btn9" class="label-btn label9">9問目</label><!--
+                    --><label for="btn10" class="label-btn back-gray label10">10問目</label><!--
+                    --><label for="btn11" class="label-btn label11 label-center">11問目</label><!--
+                    --><label for="btn12" class="label-btn back-gray label12">12問目</label><!--
+                    --><label for="btn13" class="label-btn label13">13問目</label><!--
+                    --><label for="btn14" class="label-btn back-gray label14 label-center">14問目</label><!--
+                    --><label for="btn15" class="label-btn label15">15問目</label><!--
+                    --><label for="btn16" class="label-btn back-gray label16">16問目</label><!--
+                    --><label for="btn17" class="label-btn label17 label-center">17問目</label><!--
+                    --><label for="btn18" class="label-btn back-gray label18">18問目</label>
+                </div>
+           
+
+                <div id="question1" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/bitmap.png" alt="1問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>１問目（制作：誰か）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>色々すると何とかなります。<br>
+                                        それをこうしてああするとこうなります。</p>
+
+                                    <p>答えは<b>これ</b>です。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <style>
+                .description-right-container {
+                    padding-top: 0px;
+                }
+                .details {
+                    margin-top: 0;
+                }
+
+                @media screen and (orientation: portrait) {
+                    .description-right-container {
+                        margin-top: 20px;
+                    }
+                }
+
+                @media screen and (orientation:landscape) {
+                    .kaisetsu-wrap {
+                        padding: 0 5vw 1em 3vw;
+                    }
+                }
+
+                @media screen and (orientation:portrait) {
+                    .kaisetsu-wrap {
+                        padding: 0 5vw 1em;
+                    }
+                }
+
+                .kaisetsu-container {
+                    padding: 10px 2vw 0;
+                }
+
+                input[type="radio"] {
+                    display: none;
+                }
+
+                .label-wrap {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                .label-btn {
+                    display: inline-block;
+                    text-align: center;
+                    width: 180px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin: 5px;
+                    border: 1px solid black;
+                    background-color: #eeeeee;
+                    color: black;
+                    line-height: 100%;
+                    cursor: pointer;
+                }
+
+                .label-btn::selection {
+                    background: none;
+                }
+
+                @media screen and (orientation: landscape) and (max-width: 700px) {
+                    .label-btn {
+                        width: 160px;
+                    }
+                }
+
+                @media screen and (orientation: portrait) {
+                    .label-btn {
+                        width: 32%;
+                        margin: 5px 0;
+                    }
+                    .label-center {
+                        margin: 5px 2% ;
+                    }
+                }
+
+                .back-gray {
+                    background-color: #cccccc;
+                }
+
+                .kaisetsu-p {
+                    padding-top: 15px;
+                }
+
+                .kaisetsu-p p {
+                    font-size: 16px;
+                }
+
+                @media screen and (min-width: 600px) {
+                    .kaisetsu-p p {
+                        font-size: 20px;
+                    }
+                }
+
+                .question-common {
+                    display: none;
+                }
+
+                /* 以下 radio-btnがチェックされたとき */
+                #btn1:checked ~ .label-wrap .label1 {
+                    background-color: #ffe000;
+                }
+                #btn1:checked ~ #question1 {
+                    display: block;
+                }
+                #btn2:checked ~ .label-wrap .label2 {
+                    background-color: #ffe000;
+                }
+                #btn2:checked ~ #question2 {
+                    display: block;
+                }
+                #btn3:checked ~ .label-wrap .label3 {
+                    background-color: #ffe000;
+                }
+                #btn3:checked ~ #question3 {
+                    display: block;
+                }
+                #btn4:checked ~ .label-wrap .label4 {
+                    background-color: #ffe000;
+                }
+                #btn4:checked ~ #question4 {
+                    display: block;
+                }
+                #btn5:checked ~ .label-wrap .label5 {
+                    background-color: #ffe000;
+                }
+                #btn5:checked ~ #question5 {
+                    display: block;
+                }
+                #btn6:checked ~ .label-wrap .label6 {
+                    background-color: #ffe000;
+                }
+                #btn6:checked ~ #question6 {
+                    display: block;
+                }
+                #btn7:checked ~ .label-wrap .label7 {
+                    background-color: #ffe000;
+                }
+                #btn7:checked ~ #question7 {
+                    display: block;
+                }
+                #btn8:checked ~ .label-wrap .label8 {
+                    background-color: #ffe000;
+                }
+                #btn8:checked ~ #question8 {
+                    display: block;
+                }
+                #btn9:checked ~ .label-wrap .label9 {
+                    background-color: #ffe000;
+                }
+                #btn9:checked ~ #question9 {
+                    display: block;
+                }
+                #btn10:checked ~ .label-wrap .label10 {
+                    background-color: #ffe000;
+                }
+                #btn10:checked ~ #question10 {
+                    display: block;
+                }
+                #btn11:checked ~ .label-wrap .label11 {
+                    background-color: #ffe000;
+                }
+                #btn11:checked ~ #question11 {
+                    display: block;
+                }
+                #btn12:checked ~ .label-wrap .label12 {
+                    background-color: #ffe000;
+                }
+                #btn12:checked ~ #question12 {
+                    display: block;
+                }
+                #btn13:checked ~ .label-wrap .label13 {
+                    background-color: #ffe000;
+                }
+                #btn13:checked ~ #question13 {
+                    display: block;
+                }
+                #btn14:checked ~ .label-wrap .label14 {
+                    background-color: #ffe000;
+                }
+                #btn14:checked ~ #question14 {
+                    display: block;
+                }
+                #btn15:checked ~ .label-wrap .label15 {
+                    background-color: #ffe000;
+                }
+                #btn15:checked ~ #question15 {
+                    display: block;
+                }
+                #btn16:checked ~ .label-wrap .label16 {
+                    background-color: #ffe000;
+                }
+                #btn16:checked ~ #question16 {
+                    display: block;
+                }
+                #btn17:checked ~ .label-wrap .label17 {
+                    background-color: #ffe000;
+                }
+                #btn17:checked ~ #question17 {
+                    display: block;
+                }
+                #btn18:checked ~ .label-wrap .label18 {
+                    background-color: #ffe000;
+                }
+                #btn18:checked ~ #question18 {
+                    display: block;
+                }
+
+                /* 一時的 */
+                .kaisetsu-wrap {
+                    min-height: 100vh;
+                }
+               
+            </style>
+
     </main>
 
 
     <footer><small>&copy; 2020 C-lock-row</small></footer>
 
-
-
-    <!-- ↓httpsを省略のほうがいい -->
     <script src="//code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -212,19 +484,6 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
-
-    <!-- <script>
-        var targetElement1 = document.getElementById("check-end1");
-        var targetElement2 = document.getElementById("check-end2");
-        var clientRect1 = targetElement1.getBoundingClientRect();
-        var clientRect2 = targetElement2.getBoundingClientRect();
-        var py1 = window.pageYOffset + clientRect1.top;
-        var py2 = window.pageYOffset + clientRect2.top;
-        var height = window.innerHeight;
-        $("main").css({ height: Math.max(py1, py2, height) + "px" });
-        console.log(Math.max(py1, py2, height));
-        console.log(py1, py2, height);
-    </script> -->
 </body>
 
 </html>
