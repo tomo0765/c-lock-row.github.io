@@ -192,8 +192,9 @@
         <div class="kaisetsu-wrap">
             <br>
             <h3 style="border-bottom:1px solid black">解説</h3>
-            <div class="kaisetsu-container">
-                
+            
+                <div></div>
+                <input type="checkbox" id="check-btn1" name="check">
                 <input type="radio" id="btn1" name="radio-btn" checked>
                 <input type="radio" id="btn2" name="radio-btn">
                 <input type="radio" id="btn3" name="radio-btn">
@@ -204,6 +205,7 @@
                 <input type="radio" id="btn8" name="radio-btn">
                 <input type="radio" id="btn9" name="radio-btn">
                 <input type="radio" id="btn10" name="radio-btn">
+                <input type="checkbox" id="check-btn2" name="check">
                 <input type="radio" id="btn11" name="radio-btn">
                 <input type="radio" id="btn12" name="radio-btn">
                 <input type="radio" id="btn13" name="radio-btn">
@@ -212,43 +214,744 @@
                 <input type="radio" id="btn16" name="radio-btn">
                 <input type="radio" id="btn17" name="radio-btn">
                 <input type="radio" id="btn18" name="radio-btn">
+                <input type="radio" id="btn19" name="radio-btn">
+                <input type="radio" id="btn20" name="radio-btn">
 
             
                 <div class="label-wrap">
-                    <label for="btn1" class="label-btn label1">1問目</label><!--
-                    --><label for="btn2" class="label-btn back-gray label2 label-center">2問目</label><!--
-                    --><label for="btn3" class="label-btn label3">3問目</label><!--
-                    --><label for="btn4" class="label-btn back-gray label4">4問目</label><!--
-                    --><label for="btn5" class="label-btn label5 label-center">5問目</label><!--
-                    --><label for="btn6" class="label-btn back-gray label6">6問目</label><!--
-                    --><label for="btn7" class="label-btn label7">7問目</label><!--
-                    --><label for="btn8" class="label-btn back-gray label8 label-center">8問目</label><!--
-                    --><label for="btn9" class="label-btn label9">9問目</label><!--
-                    --><label for="btn10" class="label-btn back-gray label10">10問目</label><!--
-                    --><label for="btn11" class="label-btn label11 label-center">11問目</label><!--
-                    --><label for="btn12" class="label-btn back-gray label12">12問目</label><!--
-                    --><label for="btn13" class="label-btn label13">13問目</label><!--
-                    --><label for="btn14" class="label-btn back-gray label14 label-center">14問目</label><!--
-                    --><label for="btn15" class="label-btn label15">15問目</label><!--
-                    --><label for="btn16" class="label-btn back-gray label16">16問目</label><!--
-                    --><label for="btn17" class="label-btn label17 label-center">17問目</label><!--
-                    --><label for="btn18" class="label-btn back-gray label18">18問目</label>
+                    <label for="check-btn1" class="check-label" id="check-label1">1-10問目<img src="./img/ue.png" alt=""></label>
+                    <label for="btn1" class="label-btn label1 label-left label1-10">1問目</label><!--
+                    --><label for="btn2" class="label-btn back-gray label2 label1-10">2問目</label><!--
+                    --><label for="btn3" class="label-btn label3 label-left label1-10">3問目</label><!--
+                    --><label for="btn4" class="label-btn back-gray label4 label1-10">4問目</label><!--
+                    --><label for="btn5" class="label-btn label5 label-left label1-10">5問目</label><!--
+                    --><label for="btn6" class="label-btn back-gray label6 label1-10">6問目</label><!--
+                    --><label for="btn7" class="label-btn label7 label-left label1-10">7問目</label><!--
+                    --><label for="btn8" class="label-btn back-gray label8 label1-10">8問目</label><!--
+                    --><label for="btn9" class="label-btn label9 label-left label1-10">9問目</label><!--
+                    --><label for="btn10" class="label-btn back-gray label10 label1-10">10問目</label>
+                    
+                    <label for="check-btn2" class="check-label" id="check-label2">11-20問目<img src="./img/ue.png" alt=""></label>
+                    <label for="btn11" class="label-btn label11 label-left label11-20">11問目</label><!--
+                    --><label for="btn12" class="label-btn back-gray label12 label11-20">12問目</label><!--
+                    --><label for="btn13" class="label-btn label13 label-left label11-20">13問目</label><!--
+                    --><label for="btn14" class="label-btn back-gray label14 label11-20">14問目</label><!--
+                    --><label for="btn15" class="label-btn label15 label-left label11-20">15問目</label><!--
+                    --><label for="btn16" class="label-btn back-gray label16 label11-20">16問目</label><!--
+                    --><label for="btn17" class="label-btn label17 label-left label11-20">17問目</label><!--
+                    --><label for="btn18" class="label-btn back-gray label18 label11-20">18問目</label><!--
+                    --><label for="btn19" class="label-btn label19 label-left label11-20">19問目</label><!--
+                    --><label for="btn20" class="label-btn label20 back-gray label11-20">20問目</label>
                 </div>
            
-
+                <div class="kaisetsu-container">
+                    <style>
+                        @media screen and (orientation: landscape){
+                            .br-title {
+                                display: none;
+                            }
+                        }
+                    </style>
                 <div id="question1" class="question-common">
                     <div class="visual-container" style="margin-top: 20px;">
                         <div class="visual-img-landscape">
-                            <img src="./img/zentaisen/bitmap.png" alt="1問目">
+                            <img src="./img/zentaisen/q1.png" alt="1問目">
                         </div>
                         <div class="description-right-container">
                             <div class="details">
-                                <h3>１問目（制作：誰か）</h3>
+                                <h3>１問目<br class="br-title">（制作：うりよしきば）</h3>
                                 <div class="kaisetsu-p">
-                                    <p>色々すると何とかなります。<br>
-                                        それをこうしてああするとこうなります。</p>
+                                    <p>左上は同じ文字が同じ色になっており線でつながれています。<br>
+                                        これらはクォークの６種類のアップ、ダウン、トップ、ボトム、チャーム、ストレンジを表しています。<br>
+                                        これを元に下線部を埋めると「かいとう　かぼちゃとおれんじのあいだ」となります。<br>
+                                        右上の図において「南瓜」と「木登」の間を見ると「金尓」となり、これは「ニホニウム」と読むので
+                                        解答は右上最下段の通り仮名５文字で「<b>ニホニウム</b>」となります。
+                                        </p>
+                                    ＜制作者コメント＞
+                                    <p>クォークの６種を出したら難しくなると思ったがそんな事もなかった</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                    <p>答えは<b>これ</b>です。</p>
+                <div id="question2" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q2.png" alt="2問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>２問目<br class="br-title">（制作：こーやん）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>特殊な文字配置が含まれる右側の式から、⑧⑨⑩＝cos、⑩②⑫＝sin と推測します。<br>
+                                        このような形の式を探すと、「<a href="https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%B9%E3%83%86%E3%83%AD%E3%82%A4%E3%83%89_(%E6%9B%B2%E7%B7%9A)">アステロイド</a>」という曲線を表す式 “x=a cos<sup>3</sup> θ, y=a sin<sup>3</sup> θ” が当てはまります。<br>
+                                        埋められた文字を頼りに左の文字列を見ると、 “➀i➀③y ➀i➀③⑤” となっており、この配列を満たす単語は fifty fifth のみです。<br>
+                                        <br>
+                                        アステロイドの式を asteroid (※) として全体の文章を見ると、<br>
+                                        　What is the fifty fifth asteroid?<br>
+                                        となります。 asteroid には小惑星という意味もあるので、55番目の小惑星「<b>パンドラ</b>」が答えでした。
+                                        </p>
+                                    ＜制作者コメント＞
+                                    <p>当初は cos と sin 以外の導線も用意していたのですが、全体戦ならヒントを削っても解かれそうということでこんな謎になりました。<br>
+                                        <br>
+                                        ※アステロイドの綴りには astroid と asteroid の2種類があるようです。<br>
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question3" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q3.png" alt="3問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>３問目<br class="br-title">（制作：かい）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>横26マスにはアルファベットがabc…と入るのと同時に左から「日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜重」と入ります。これは「倉頡輸入法」という中国語の入力方式でした。<br>
+                                        <br>
+                                        横一列で漢字一字を表しており、実際に数字の順に入力してみると、<br>
+                                        上から｢國破山河在城春草…｣となります。<br>
+                                        これは杜甫の『春望』でした。<br>
+                                        <br>
+                                        <span style="-ms-writing-mode: tb-rl; writing-mode: vertical-rl;">春望 杜甫<br><br>國破山河在<br>城春草木深<br>感時花濺涙<br>恨別鳥驚心<br>烽火連三月<br>家書抵萬金<br>白頭掻更短<br>渾欲不勝簪</span>
+                                        <br><br>
+                                        4-3: 右から4列目上から3行目:鳥<br>
+                                        3-3: 3列目3行目:花<br>
+                                        5-5: 5列目5行目:月<br>
+                                        となるので、最終的な答えは、｢花鳥風月｣の残りの一つである｢<b>風</b>｣となります。
+                                        </p>
+                                    ＜制作者コメント＞
+                                    <p>大学生になってから急に漢字が書けなくなったように感じます...
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question4" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q4.png" alt="4問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>４問目<br class="br-title">（制作：こーやん）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>青い文字はどうやらモールス信号のようです。   <br>
+                                        仮名だと上の文字列が「よけに゛らむれなぬよいむい」となって意味が通じず、アルファベットだと「－－－－」という信号がないので、これは日本語でも英語でもない言語のモールス信号ではないかと推測する必要がありました。<br>
+                                        <br>
+                                        試しにギリシャ文字のモールス信号を当てはめると、上の文字列は「ΜΥΘΙΣΤΟΡΗΜΑΤΑ」となり、これはギリシャ語で小説という意味になります。<br>
+                                        そして、4つの信号に該当するギリシャ文字は、γ、θ、χ、ηです。<br>
+                                        <br>
+                                        ギリシャ文字を含む小説といえば森博嗣の「Gシリーズ」があります。<br>
+                                        4つのギリシャ文字に対応する小説はそれぞれ、<br>
+                                        　キウイγは時計仕掛け<br>
+                                        　θは遊んでくれたよ<br>
+                                        　χの悲劇<br>
+                                        　ηなのに夢のよう<br>
+                                        となり、１２３４の場所を読むと「<b>はんのう</b>」となります。<br>
+                                        </p>
+                                    ＜制作者コメント＞
+                                    <p>何の言語かを特定する部分で根気がいるかもしれません。
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question5" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q5.JPG" alt="5問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>５問目<br class="br-title">（制作：武田鈴）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>
+                                        右上の吹き出しの中の円は五等分されており、これは漫画｢五等分の花嫁｣のヒロインを表していました。<br>
+                                        それぞれ、<br>
+                                        黄→中野一花<br>
+                                        黒→中野二乃<br>
+                                        青→中野三玖<br>
+                                        緑→中野四葉<br>
+                                        赤→中野五月<br>
+                                        とイメージカラーを表していました。<br>
+                                        <br>
+                                        しかし、5人の色に応じて左下の数字に名前の文字を入れてみても上手く言葉が出来ません。<br>
+                                        そこで円が吹き出しの中にあり、数字が吹き出しの外にあることから、声優の名前を入れることに気づく必要がありました。<br>
+                                        それぞれ<br>
+                                        一花→花澤香菜(はなざわかな)<br>
+                                        二乃→竹達彩奈(たけたつあやな)<br>
+                                        三玖→伊藤美来(いとうみく)<br>
+                                        四葉→佐倉綾音(さくらあやね)<br>
+                                        五月→水瀬いのり(みなせいのり)<br>
+                                        でした。<br>
+                                        それぞれ対応する文字を読むと「たかもりなつみ」<br>
+                                        同じく声優の高森奈津美さんが出てきました。<br>
+                                        矢印は吹き出しの方向を指しており、高森奈津美さんが声優をつとめる、「<b>上杉らいは</b>」が答えとなります。
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>二乃派です
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question6" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q6.png" alt="6問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>６問目<br class="br-title">（制作：komei）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>
+                                        2つの袋にはそれぞれひらがなとカタカナが詰め込まれています。下の数字のペアは「ひらがなの個数-カタカナの個数」の順でそれぞれ文字1つを表しています。<br>
+                                        しかし右側の袋は何が入っているか見えません。そのため袋の中意を特定していきます。<br>
+                                        左の袋を並び替えると「ユニコーンのつの」「たぬきのおきもの」「まじゅうのキバ」「ふはつだん」が出てきます。これらは星のカービィスーパーデラックスの洞窟大作戦にでてくるお宝の名前です。そしてこの4つのお宝の値段の合計値は袋の下の95780Gと一致します。よってこの袋は（）内の個数のお宝が入っていて、値段の合計が下に書かれていることになります。ということで、47個で3141590Gになるお宝の組み合わせを見つけ、そのお宝のひらがなとカタカナの数を数え、下の数字のペアに該当する文字を拾うと「<b>デオキシス</b>」になります。
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>47個で3141590Gになる組み合わせ、プログラムで解かれたのか手作業で解かれたのか気になりますね
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question7" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-portrait">
+                            <img src="./img/zentaisen/q7.png" alt="7問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>７問目<br class="br-title">（制作：こーやん）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>
+                                        イラストなどを仮名に直してフリック入力の配置にすると、緑矢印は<a href="https://ja.wikipedia.org/wiki/%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B2%E3%83%BC%E3%83%A0">ライフゲーム</a>の規則になっています。<br>
+                                        <br>
+                                        例えば「蚊、旗、皿」→「傘、矢、歯」→「傘、歯」→「魚、歯」↩ なら<br>
+                                        　□■■　→　□■■　→　□■■　→　□■■<br>
+                                        　■□■　→　□□■　→　□□■　→　□■■<br>
+                                        　□□■　→　□■□　→　□□□　→　□□□<br>
+                                        　□□□　→　□□□　→　□□□　→　□□□<br>
+                                        と配置が変わっています。<br>
+                                        <br>
+                                        それを踏まえると、f(9) は「た、は、ら、濁点」、 f(76) は「か、ま、ら」でできる言葉だとわかります。<br>
+                                        これを頼りに f(x) が表すものを探すと、<a href="http://www.sf.airnet.ne.jp/~ts/language/largenumber.html">仏教の経典に登場する巨大な数の名前</a>が該当することがわかります。<br>
+                                        つまり f(x)=10<sup>7×2<sup>x</sup></sup> であり、<br>
+                                        　f(9) ＝ たばら、 f(76) ＝ かまら<br>
+                                        となっています。<br>
+                                        <br>
+                                        「f(n)、？」→「傘、花、玉」が成り立つライフゲームの配置を考えると「f(n)、？」は「か、な、は、ま、濁点」の配置となり、これを満たす f(n) と？ は「まかば」 (＝f(77)) と「な」なので「<b>77な</b>」が正解でした。
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>いろいろな難しさが凝縮された問題だったかと思います。<br>
+                                        制作では「傘、花、玉」の一つ前の配置が一意であることを確かめるのに一番苦労しました。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question8" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q8.png" alt="8問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>８問目<br class="br-title">（制作：うりよしきば）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>
+                                        上から三番目を逆から読むとMAJORとなることから、逆から読むと推測します。<br>
+                                        これらは全て学名の一部ですが学名の後半部分だけでは全ては確定しません。<br>
+                                        ほぼ確定する物として上から二番目のsajori⇨サヨリ、上から六番目のherzensteini⇨カレイ、上から七番目のsaira⇨サンマ、yessoensis⇨ホタテ、myriaster⇨アナゴがあります。これから、全て魚の名前が書いてあると推測できます。<br>
+                                        <br>
+                                        これらの順は「おさかな天国」の一番の歌詞で出てくる海産物順であり、空白部には「イクラ」が当てはまります。「カレイ」が「レイカ」になっていたため、「イクラ」は「クライ」となり、漢字一文字で「<b>位</b>」がこの問題の回答となります。
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>学名を反転しただけの問題です。この全体戦の中で癒し枠ですね。<br>
+                                        他の人がヤバすぎて比較的多くの癒し枠を作ってしまっている。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question9" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q9.png" alt="9問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>９問目<br class="br-title">（制作：komei）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>
+                                        外周を上手く読むと「たりないよんもじでごもじをつくってさいたんでたおしたきろくよめ」とでます<br>
+                                        盤面をよく見ると、シークワーズの要領でところどころアルファベットのひらがな表記が見られます<br>
+                                        しかしどんなにさがしても「えー」「いー」「けー」「だぶりゅー」は見つかりません。<br>
+                                        足りない4文字から5文字の英単語「AWAKE」が出来ます。これはコンピュータ将棋ソフトの名前でもあります<br>
+                                        AWAKEとの公式戦の中で22手目で投了という速さで終了した試合があります。2015年4月11日に行われた電王戦の第5局(対 阿久津八段)です<br>
+                                        この棋譜の、駒が移動した場所をたどると「もんだいのこたええふおーしーゆーえすでした」となって答えは「<b>FOCUS</b>」です<br>
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>AWAKEのこの試合、結構話題になったので覚えていた人もいるはず…？
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question10" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q10.JPG" alt="10問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>１０問目<br class="br-title">（制作：武田鈴）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>
+                                        緑青赤の数字は、Sardowverseのコスト、攻撃、体力を表していました。<br>
+                                        それぞれのスタッツは一意に決まるものでした。<br>
+                                        また黒数字はそのフォロワーの進化前のフレーバーテキストの何文字目を参照するかを表しており、それぞれ<br>
+                                        ①星 ⑥双<br>
+                                        ②無 ⑦光<br>
+                                        ③再 ⑧災<br>
+                                        ④再 ⑨星<br>
+                                        ⑤識 ⑩全<br>
+                                        となりました。<br>
+                                        これは進化前が<br>
+                                        「一番星の下、神は無二たる啓示を与えた。
+                                        再三再四と繰り返す人の業に、裁きでなく赦しを与えよ。
+                                        彼女は頷き、天に己が五識を捧ぐと誓った。」 
+                                        <br>
+                                        進化後が<br>
+                                        「この世は神が創りたもうた大きな双六。
+                                        彼女は七光背負いし小さな駒。
+                                        訪れる八災、試練、しかし瞬く導きの九曜星。
+                                        全てを越えた旅の果て、彼女は十全なる権能を得る。」<br>
+                                        というフレーバーテキストを持っているフォロワーを表していました。<br>
+                                        よってこのフォロワーの名前である「<b>開闢の予言者</b>」が答えとなります。<br>
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>開闢はロマンでありガチカード
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question11" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q11.png" alt="11問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>１１問目<br class="br-title">（制作：うりよしきば）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>
+                                        縦になっているものはRGB値+透明度、横になっているものはutf-8で変換します。<br>
+                                        左上は色を並べると『ルーマニア』の国旗になります。<br>
+                                        下は左が「赤」色、真ん中が「の」「他」、右は「人」色なので『赤の他人』となります。<br>
+                                        右上は下よりこの色が「人」色と分かります。これが透明になっているので『透明人間』を表しています。これらの単語を片仮名にすると<br>
+                                        <br>
+                                        ルーマニア　　　　⇒ル－マ＝ア<br>
+                                        トウメイニンゲン　⇒トウ×イ＝ンゲン<br>
+                                        アカノタニン　　　⇒アカ／タ＝ン<br>
+                                        <br>
+                                        と計算式になっていることが分かります。これを解くと<br>
+                                        <br>
+                                        １２３４５６７８９０<br>
+                                        アンイウタマルゲトカ<br>
+                                        <br>
+                                        となります。従って答えは「<b>アルマイト</b>」でした。
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>原案では１７の部分を隠していたのですが却下されました。<br>
+                                        豚辞書では一意なんだけどなぁ()
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question12" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q12.jpg" alt="12問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>１２問目<br class="br-title">（制作：あぐにゃん）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>
+                                        左のグラフは「WSOP(テキサスホールデムの最も大規模な世界大会)メインイベントの、優勝者と準優勝者の決着ハンドをブラックジャックのスコアとしてみなした値」を表していました。<br>
+                                        例えば2019年の優勝者と準優勝者の決着ハンドはK♥K♣と8♠4♠です。これらをブラックジャックのスコアとして見た時の値は20と12なので、確かに一致しています。<br>
+                                        <br>
+                                        WSOPの各年の決着ハンドは以下のwikiに記載されてます。<br>
+                                        <a href="https://ja.wikipedia.org/wiki/%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%82%AA%E3%83%96%E3%83%9D%E3%83%BC%E3%82%AB%E3%83%BC">日本語版wiki</a><br>
+                                        <a href="https://en.wikipedia.org/wiki/World_Series_of_Poker">英語版wiki</a><br>
+                                        <br>
+                                        よって、右側の該当する年で優勝あるいは準優勝した人の名前の頭文字を順に読むと、答えは「<b>check</b>」と出てきました。
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>ポーカーは以前から好きで、最近謎クラの間でもポーカーが流行ってきてるように見えてきたので、この問題も知識問だけど解けるやろって思って作りました。<br>
+                                        面白いゲームなので皆さんもぜひ機会があればやってみてください。<br>
+                                        この問題で私のことは嫌いになっても、ポーカーのことは嫌いにならないでください。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question13" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q13.png" alt="13問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>１３問目<br class="br-title">（制作：こーやん）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>
+                                        右下の注意書きから、アルファベットを使うことと、その大文字小文字は区別しないことがわかります。<br>
+                                        そして、カッコの中の数字は上のものに該当する単語の文字数を表していました。<br>
+                                        <br>
+                                        数字を頼りにイラストが表す単語を推測すると、<br>
+                                        　XL FC J e PhD<br>
+                                        となります。これらのアルファベットを数字に変換すると、<br>
+                                        　24, 12, 6, 3, 10, 5, 16, 8, 4<br>
+                                        となり、これは初期値24の「<a href="https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%A9%E3%83%83%E3%83%84%E3%81%AE%E5%95%8F%E9%A1%8C">コラッツ数列</a>」というものになっています。<br>
+                                        <br>
+                                        この後に続くのは 2, 1, 4, 2, 1, 4,…… の繰り返しなので、？に該当する単語は <b>BAD</b> でした。
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>題材にしているコラッツ予想というものは、<br>
+                                        　どんな自然数でも「偶数なら2で割り、奇数なら3倍して1を足す」という操作を繰り返し行うとどこかで 4, 2, 1, 4, 2, 1,…… のループに入るだろう<br>
+                                        という予想のことです。<br>
+                                        主張は単純なのにいまだに未解決問題のようです。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question14" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q14.JPG" alt="14問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>１４問目<br class="br-title">（制作：武田鈴）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>
+                                        それぞれの6ケタの数字を2ケタずつに区切ると73～92/54～60/76～86とある程度の範囲内にあることがわかります。この事とピンク、ブルー、イエローの色から「アイドルマスターシンデレラガールズに登場するアイドルのスリーサイズ」を表していることに気づく必要がありました。それぞれ<br>
+                                        925885→松本沙理奈<br>
+                                        785480→佐久間まゆ<br>
+                                        845586→ナターリア<br>
+                                        ？？？→双葉杏<br>
+                                        735576→森久保乃々<br>
+                                        835782→一ノ瀬志希<br>
+                                        746079→高森藍子<br> 
+                                        825986→小日向美穂<br> 
+                                        となります。？？？が双葉杏のスリーサイズであることに注意しましょう。<br>
+                                        <br>
+                                        これらのアイドルは第８回総選挙で上位におり、それぞれ<br>
+                                        松本沙理奈 20位<br>
+                                        佐久間まゆ 8位<br>
+                                        ナターリア 9位<br>
+                                        双葉杏 18位<br>
+                                        森久保乃々 25位<br>
+                                        一ノ瀬志希 6位<br>
+                                        高森藍子 15位<br>
+                                        小日向美穂 23位<br>
+                                        でした。ここで順位をアルファベットに変換すると<br>
+                                        thirty　fortytwo<br>
+                                        という言葉出てきました。総選挙で順位を見てみると<br>
+                                        30位→前川みく<br>
+                                        42位→多田李衣菜<br>
+                                        であり、この二人のユニットである「<b>アスタリスク</b>」が答えとなります。
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>みくにゃん可愛い
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question15" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q15.png" alt="15問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>１５問目<br class="br-title">（制作：うりよしきば）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>メイ、？？、バスは線分をそれぞれ4:7,7:10,1:1に分けています。この比と文字列の対応を用います。<br>
+                                        つまり、メイ＝4:7,？？＝7:10,バス＝1:1と考えます。<br>
+                                        ここでこのような比の表現として一次元だけではなく二次元の表現、つまりタテ：ヨコも存在することを考えます。<br>
+                                        この問題において比が表していたものは国旗の縦横比でした。<br>
+                                        縦横比が1:1の国旗は「バチカン市国」と「スイス」、4:7なのは「メキシコ」と「イラン」であり、どちらも頭文字を並べると「バス」「メイ」となります。<br>
+                                        以上より縦横比が7:10の物を探すと「アンドラ」と「ブラジル」となるため答えは「<b>アブ</b>」となります。
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>となりのナントカっぽいのはたまたまです。<br>
+                                        JanからDecを全体とした線分を4:7に分ける部分にMayがあるのもたまたまです。<br>
+                                        縮尺はいじわるです。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question16" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q16.png" alt="16問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>１６問目<br class="br-title">（制作：かい）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>これはURLを示していました。アルファベット・記号それぞれの言葉の頭文字をとったものです。<br>
+                                        <br>
+                                        例：<br>
+                                        A（えー）→ え<br>
+                                        B（びー）→ び<br>
+                                        ：（ころん）→ こ<br>
+                                        /（すらっしゅ）→ す<br>
+                                        .（どっと）→ ど<br>
+                                        ？（くえすちょんまーく）→ く<br>
+                                        <br>
+                                        大きな文字は大文字として変換していくと、<a href="https://writening.net/page?yWpYKt">https://writening.net/page?yWpYKt</a>というサイトにたどり着きます。<br>
+                                        このサイトには、<br>
+                                        <br>
+                                        What is missing here?というタイトルとともに<a href="https://whatismissinghere.github.io">https://whatismissinghere.github.io</a>というURLがありました。そのサイトに行ってみると、
+                                        黒い正方形があります。これはどうやら矢印キーでその正方形が白と黒に切り替わるようです。白黒の切り替わりが同じ方向に一定数以上押しても切り替わらないことから、この正方形が3×3の形になっていることを想像する必要がありました。
+                                        全体としては以下の画像のようになります。<br>
+                                        <br>
+                                        <img src="./img/zentaisen/q16_1.png" alt="ロゴ背景" class="q16-img"><br>
+                                        <br>
+                                        これは皆さんおなじみC-lock-rowのロゴの背景ですね。<br>
+                                        <br>
+                                        <img src="../img/karasu.png" alt="C-lock-rowロゴ" class="q16-img"><br>
+                                        <br>
+                                        "What is missing here?"（ここに欠けているのは何？)ということなので、解答は"<b>crow</b>"（カラス）でした。
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>某謎合戦を意識しているとかしてないとか。<br>
+                                        <br>
+                                        URLの"yWpYKt"の部分はランダムだったのでアルファベットの頭文字だけで確定するように<a href="https://twitter.com/pgpg_1ove">先輩</a>にURLガチャしてもらいました()<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    @media screen and (orientation: landscape) {
+                       .q16-img {
+                           max-height: 30vh;
+                       }
+                    }
+                    @media screen and (orientation: portrait) {
+                       .q16-img {
+                           max-width: 50%;
+                       }
+                    }
+               </style>
+
+                <div id="question17" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q17.jpg" alt="17問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>１７問目<br class="br-title">（制作：あぐにゃん）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>四角の中のものはそれぞれ以下のワードを表していました。<br>
+                                        (元素)ようそ　かりうむ<br>
+                                        (嵐のメンバー)さくらい　あいば<br>
+                                        (魚)まぐろ　きす　かます<br>
+                                        (通貨単位)たら　どらむ　えん<br>
+                                        (苗字)なち　なばため　しめ<br>
+                                        (星座)つる　うお　おひつじ<br>
+                                        (県庁所在地)ながさき　なは　さが<br>
+                                        (国名)たい　まるた　いんど<br>
+                                        (図形など)ろく　すくえあ　えん<br>
+                                        (色)こん　しあん　くろ　しろ<br>
+                                        (難読漢字)つば　ばく　くわ　わに　にれ<br>
+                                        <br>
+                                        11個あるものと言えばみなさんご存じ立方体の展開図の種類なので、展開図をスケルトンの盤面と見立てて埋めます。<br>
+                                        <br>
+                                        　　よ<br>
+                                        かりうむ<br>
+                                        　　そ<br>
+                                        <br>
+                                        　　　あ<br>
+                                        さくらい<br>
+                                        　　　ば<br>
+                                        <br>
+                                        　か<br>
+                                        　まぐろ<br>
+                                        きす<br>
+                                        <br>
+                                        　　た<br>
+                                        　どらむ<br>
+                                        えん<br>
+                                        <br>
+                                        　　　し<br>
+                                        なばため<br>
+                                        ち<br>
+                                        <br>
+                                        う<br>
+                                        おひつじ<br>
+                                        　　る<br>
+                                        <br>
+                                        　さ<br>
+                                        ながさき<br>
+                                        は<br>
+                                        <br>
+                                        まるた<br>
+                                        　　いんど<br>
+                                        <br>
+                                        　ろ<br>
+                                        すくえあ<br>
+                                        　　ん<br>
+                                        <br>
+                                        　　　こ<br>
+                                        　しあん<br>
+                                        くろ<br>
+                                        <br>
+                                        つば<br>
+                                        　くわ<br>
+                                        　　にれ<br>
+                                        <br>
+                                        すると、通貨単位の「どん」だけが足りていないことがわかるので、答えは「<b>どん</b>」です。<br>
+                                        
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>展開図を使う別の問題を考えていたのですが、実装が難航していたところこの問題を思いつき作りました。<br>
+                                        「11といえば展開図」←ほんまかって感じですよね、全体戦の問題を作るのは初めてだったので難易度調整迷いましたが、集合知の力を信じました。<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question18" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <video controls="controls" width="700" height="200" style="background: black;">
+                                <source src="img/zentaisen/q18.MOV" alt="18問目">
+                            </video>
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>１８問目<br class="br-title">（制作：武田鈴）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>4フレーズ目、7フレーズ目はそれぞれ「only my railgun｣と「This game｣のイントロでした。<br>
+                                        このことから1～3フレーズ目は「only my railgun｣、5～6フレーズ目は「This game」を表してるのではないかと考えることが出来ます。<br>
+                                        弾いてる音の数と単語の文字数が一致してることから、音とアルファベットが一対一対応しているのではないかと考えることが出来ます。<br>
+                                        左手(低音)のド～ド、右手(高音)のド～ドで合わせて26音。ちょうどアルファベットの文字数と同じです。<br>
+                                        <br>
+                                        8フレーズ目は対応させると「Q」となり、その後のフレーズが何を表しているかという問題提示になっていました。<br>
+                                        その後の音を対応通り読むことで「<b>POP TEAM EPIC(ぽぷてぴぴっく)</b>」が答えとなります。<br>
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>作りたいというだけで生まれた音を使った謎です。最初は和音で弾いてたのですが、さすがに無理ということで難易度落としてこの形です。許して。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question19" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q19.png" alt="19問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>１９問目<br class="br-title">（制作：こーやん）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>プログラムを組むなどしてこれを素因数分解すると以下のようになります。<br>
+                                        65537<sup>4</sup> × 131071<sup>6</sup> × 514229<sup>5</sup> × 2124679<sup>2</sup> × 9369319<sup3>3</sup3> × 32212254719<br>
+                                        <br>
+                                        指数順にして素数を整理すると、<br>
+                                        　32212254719　＝4番目の Woodall素数<br>
+                                        　2124679　＝2番目の Wolstenholme素数<br>
+                                        　9369319　＝4番目の Newman–Shanks–Williams素数<br>
+                                        　65537　＝5番目の Fermat素数<br>
+                                        　514229　＝9番目の Fibonacci素数<br>
+                                        　131071　＝6番目の Mersenne素数<br>
+                                        となります。<br>
+                                        <br>
+                                        Woodall の4文字目、 Wolstenholme の2文字目…… と文字を拾うと「domain」となるので正解は<b>domain</b>でした。<br>
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>Solve Me というタイトルで、本当に巨大な数を素因数分解させるというのがやりたくて作ってみました。<br>
+                                        <br>
+                                        参考：<br>
+                                        <a href="https://repl.it/languages/ruby">このサイト</a>で以下を実行すると答えが返ってきます。<br>
+                                        require "prime"<br>
+                                        <span style="overflow-wrap: break-word;word-wrap: break-word">Prime.prime_division(402254197733765270790758915710957395787548010785487325719081041369329444961937481937530780753432581419239990319685216328509)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="question20" class="question-common">
+                    <div class="visual-container" style="margin-top: 20px;">
+                        <div class="visual-img-landscape">
+                            <img src="./img/zentaisen/q20.png" alt="20問目">
+                        </div>
+                        <div class="description-right-container">
+                            <div class="details">
+                                <h3>２０問目<br class="br-title">（制作：firsecthir）</h3>
+                                <div class="kaisetsu-p">
+                                    <p>KOREHASAIGONOMONDAIの一部が太文字になっています。太字の部分を並び替えると「shindanmaker」となり、診断メーカーのURLの末尾を970585にして検索すると「君はけろけろけろっぴになれるか」という診断が出てきます。<br>
+                                        この診断は、全部で6個のリストからそれぞれ1個ずつランダムに排出された文字を連結して出てきます。各リストは49個の同じハズレ文字列と各リストごとに1個ずつ割り当てられたアタリ文字列からなります。<br>
+                                        とにかく診断を回して文字列を集め、適切に区切ることで各リストの中身を特定していきます。すると各リストで固有のアタリ文字列、1つ目から順に「しろ」「くろ」「のさ」「いとと」「かいと」「うしろ」を特定できて、答えは「<b>しろくろのさいと</b>」となります。<br>
+                                    </p>
+                                    ＜制作者コメント＞
+                                    <p>C-lock-rowでは初めまして。firsecthirと申します。<br>
+                                        この問題は全体戦でよく使われるテーマ「集合知」を意識しました。<br>
+                                        最終問題にふさわしい1問になっていれば幸いです。
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -257,7 +960,58 @@
 
             </div>
 
+    </div>
+
             <style>
+                 input[type="checkbox"] {
+                    display: none;
+                }
+                @media screen and (orientation: landscape) {
+                    .check-label {
+                        display: none;
+                    }
+                }
+                
+                @media screen and (orientation: portrait){
+                    .check-label {
+                    display: inline-block;
+                    text-align: center;
+                    width: 100%;
+                    padding-top: 7px;
+                    padding-bottom: 7px;
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                    border: 1px solid black;
+                    background-color: rgb(43, 43, 43);
+                    color: #eeeeee;
+                    line-height: 100%;
+                    cursor: pointer;
+                    position: relative;
+                    }
+                    .check-label img {
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 16px;
+                    }
+                }
+
+                #check-btn1:checked ~ .label-wrap .label1-10 {
+                    display: none;
+                }
+                #check-btn2:checked ~ .label-wrap .label11-20 {
+                    display: none;
+                }
+                #check-btn1:checked ~ .label-wrap #check-label1 img {
+                    transform: rotate(180deg) translateY(50%);
+                }
+                #check-btn2:checked ~ .label-wrap #check-label2 img {
+                    transform: rotate(180deg) translateY(50%);
+                }
+
+
+               
                 .description-right-container {
                     padding-top: 0px;
                 }
@@ -268,6 +1022,9 @@
                 @media screen and (orientation: portrait) {
                     .description-right-container {
                         margin-top: 20px;
+                    }
+                    .question-common .visual-container .description-right-container {
+                        padding: 0;
                     }
                 }
 
@@ -284,7 +1041,12 @@
                 }
 
                 .kaisetsu-container {
-                    padding: 10px 2vw 0;
+                    padding: 0 2vw;
+                }
+                @media screen and (orientation: portrait) {
+                    .kaisetsu-container {
+                    padding: 0;
+                }
                 }
 
                 input[type="radio"] {
@@ -322,11 +1084,13 @@
 
                 @media screen and (orientation: portrait) {
                     .label-btn {
-                        width: 32%;
+                        width: 49%;
                         margin: 5px 0;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
                     }
-                    .label-center {
-                        margin: 5px 2% ;
+                    .label-left{
+                        margin: 5px 2% 5px 0 ;
                     }
                 }
 
@@ -352,123 +1116,131 @@
                     display: none;
                 }
 
+               
+
                 /* 以下 radio-btnがチェックされたとき */
                 #btn1:checked ~ .label-wrap .label1 {
                     background-color: #ffe000;
                 }
-                #btn1:checked ~ #question1 {
+                #btn1:checked ~ .kaisetsu-container #question1 {
                     display: block;
                 }
                 #btn2:checked ~ .label-wrap .label2 {
                     background-color: #ffe000;
                 }
-                #btn2:checked ~ #question2 {
+                #btn2:checked ~ .kaisetsu-container #question2 {
                     display: block;
                 }
                 #btn3:checked ~ .label-wrap .label3 {
                     background-color: #ffe000;
                 }
-                #btn3:checked ~ #question3 {
+                #btn3:checked ~ .kaisetsu-container #question3 {
                     display: block;
                 }
                 #btn4:checked ~ .label-wrap .label4 {
                     background-color: #ffe000;
                 }
-                #btn4:checked ~ #question4 {
+                #btn4:checked ~ .kaisetsu-container #question4 {
                     display: block;
                 }
                 #btn5:checked ~ .label-wrap .label5 {
                     background-color: #ffe000;
                 }
-                #btn5:checked ~ #question5 {
+                #btn5:checked ~ .kaisetsu-container #question5 {
                     display: block;
                 }
                 #btn6:checked ~ .label-wrap .label6 {
                     background-color: #ffe000;
                 }
-                #btn6:checked ~ #question6 {
+                #btn6:checked ~ .kaisetsu-container #question6 {
                     display: block;
                 }
                 #btn7:checked ~ .label-wrap .label7 {
                     background-color: #ffe000;
                 }
-                #btn7:checked ~ #question7 {
+                #btn7:checked ~ .kaisetsu-container #question7 {
                     display: block;
                 }
                 #btn8:checked ~ .label-wrap .label8 {
                     background-color: #ffe000;
                 }
-                #btn8:checked ~ #question8 {
+                #btn8:checked ~ .kaisetsu-container #question8 {
                     display: block;
                 }
                 #btn9:checked ~ .label-wrap .label9 {
                     background-color: #ffe000;
                 }
-                #btn9:checked ~ #question9 {
+                #btn9:checked ~ .kaisetsu-container #question9 {
                     display: block;
                 }
                 #btn10:checked ~ .label-wrap .label10 {
                     background-color: #ffe000;
                 }
-                #btn10:checked ~ #question10 {
+                #btn10:checked ~ .kaisetsu-container #question10 {
                     display: block;
                 }
                 #btn11:checked ~ .label-wrap .label11 {
                     background-color: #ffe000;
                 }
-                #btn11:checked ~ #question11 {
+                #btn11:checked ~ .kaisetsu-container #question11 {
                     display: block;
                 }
                 #btn12:checked ~ .label-wrap .label12 {
                     background-color: #ffe000;
                 }
-                #btn12:checked ~ #question12 {
+                #btn12:checked ~ .kaisetsu-container #question12 {
                     display: block;
                 }
                 #btn13:checked ~ .label-wrap .label13 {
                     background-color: #ffe000;
                 }
-                #btn13:checked ~ #question13 {
+                #btn13:checked ~ .kaisetsu-container #question13 {
                     display: block;
                 }
                 #btn14:checked ~ .label-wrap .label14 {
                     background-color: #ffe000;
                 }
-                #btn14:checked ~ #question14 {
+                #btn14:checked ~ .kaisetsu-container #question14 {
                     display: block;
                 }
                 #btn15:checked ~ .label-wrap .label15 {
                     background-color: #ffe000;
                 }
-                #btn15:checked ~ #question15 {
+                #btn15:checked ~ .kaisetsu-container #question15 {
                     display: block;
                 }
                 #btn16:checked ~ .label-wrap .label16 {
                     background-color: #ffe000;
                 }
-                #btn16:checked ~ #question16 {
+                #btn16:checked ~ .kaisetsu-container #question16 {
                     display: block;
                 }
                 #btn17:checked ~ .label-wrap .label17 {
                     background-color: #ffe000;
                 }
-                #btn17:checked ~ #question17 {
+                #btn17:checked ~ .kaisetsu-container #question17 {
                     display: block;
                 }
                 #btn18:checked ~ .label-wrap .label18 {
                     background-color: #ffe000;
                 }
-                #btn18:checked ~ #question18 {
+                #btn18:checked ~ .kaisetsu-container #question18 {
+                    display: block;
+                }
+                #btn19:checked ~ .label-wrap .label19 {
+                    background-color: #ffe000;
+                }
+                #btn19:checked ~ .kaisetsu-container #question19 {
+                    display: block;
+                }
+                #btn20:checked ~ .label-wrap .label20 {
+                    background-color: #ffe000;
+                }
+                #btn20:checked ~ .kaisetsu-container #question20 {
                     display: block;
                 }
 
-                /* 一時的 */
-                .kaisetsu-wrap {
-                    min-height: 100vh;
-                }
-               
             </style>
-
     </main>
 
 
@@ -484,6 +1256,20 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
+
+    <script>
+        var windowHeight = window.innerHeight;
+        var width = window.innerWidth;
+        if (windowHeight > width){
+            $('#check-btn1').prop('checked', true);
+            $('#check-btn2').prop('checked', true);
+        }
+        
+        $(".kaisetsu-wrap").css(
+            'min-height', windowHeight + "px"
+        )
+        
+    </script>
 </body>
 
 </html>

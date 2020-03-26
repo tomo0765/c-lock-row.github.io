@@ -103,7 +103,7 @@ main {
 .visual-img-landscape {
   display: inline-block;
   text-align: center;
-  img {
+  img, video {
     max-width: 90%;
     max-height: 70vh;
   }
